@@ -1,0 +1,68 @@
+/* Active menu item style */
+.active-menu {
+    background-color: #f3f4f6;
+    border-left: 4px solid #dc2626;
+    font-weight: 500;
+}
+
+/* Status badge styles */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Table styles */
+.min-w-full {
+    min-width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .flex-col.sm\:flex-row {
+        flex-direction: column;
+    }
+    
+    .w-full.sm\:w-64 {
+        width: 100%;
+    }
+    
+    .flex-col.sm\:flex-row {
+        gap: 0.5rem;
+    }
+    
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    border-color: #d1d5db;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #dc2626;
+    border-color: #dc2626;
+}
+
+/* Button transitions */
+.transition-colors {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+/* Focus styles */
+.focus\:ring-2:focus {
+    box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.5);
+}
+
+.focus\:ring-red-500:focus {
+    --tw-ring-color: rgba(220, 38, 38, 0.5);
+}

@@ -1,0 +1,71 @@
+/* Active Menu Item */
+.active-menu {
+    background-color: #f3f4f6;
+    font-weight: 500;
+    color: #ef4444;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.status-badge[data-status="pending"] {
+    background-color: #fef3c7;
+    color: #92400e;
+}
+
+.status-badge[data-status="processing"] {
+    background-color: #bfdbfe;
+    color: #1e40af;
+}
+
+.status-badge[data-status="shipped"] {
+    background-color: #c7d2fe;
+    color: #3730a3;
+}
+
+.status-badge[data-status="completed"] {
+    background-color: #d1fae5;
+    color: #065f46;
+}
+
+.status-badge[data-status="cancelled"] {
+    background-color: #fee2e2;
+    color: #991b1b;
+}
+
+/* Modal transitions */
+#orderModal {
+    transition: opacity 0.3s ease;
+}
+
+#orderModal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#orderModal:not(.hidden) {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .w-64 {
+        width: 100%;
+    }
+    
+    #sidebarToggle {
+        display: block;
+    }
+    
+    #customDateRange {
+        grid-column: 1 / -1;
+    }
+}
